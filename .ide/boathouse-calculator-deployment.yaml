@@ -19,6 +19,8 @@ spec:
     spec:
       containers:
         - env:
+            - name: HOME
+              value: /root
             - name: LOCAL_USER_PASSWORD
               value: root123
             - name: ROOT_PASSWORD
