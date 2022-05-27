@@ -33,7 +33,7 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 console.log("Server running on port " + port);
-console.log("SmartTEST CLI k8s mode");
+console.log("SmartTEST CLI k8s mode v0.1.19.3751");
 /**
  * Normalize a port into a number, string, or false.
  */
