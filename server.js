@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+/** Smoke 0602*/
 /**
  * Module dependencies. 
  */
