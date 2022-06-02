@@ -20,8 +20,8 @@ workspace:
       - npm install
   services:
     boathouse-calculator:
-      #image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-node-v2-vscode:all-version
-      image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-base-vscode:latest
+      image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-node-v2-vscode:all-version
+      #image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-base-vscode:latest
       
       restart: always
       environment:
