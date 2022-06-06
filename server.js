@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Smoke 0607-CLI Local*/
+/** Smoke 0607-CLI Remote*/
 /**
  * Module dependencies. 
  */
