@@ -34,7 +34,7 @@ server.on('listening', onListening);
 
 console.log("Server running on port " + port);
 console.log("SmartTEST CLI k8s mode v0.1.19.3751");
-console.log("Smoke serve 111");
+console.log("Smoke Server 2022.6.6");
 /**
  * Normalize a port into a number, string, or false.
  */
