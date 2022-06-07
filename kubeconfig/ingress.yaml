@@ -30,3 +30,10 @@ spec:
             name: boathouse-calculator
             port:
               number: 3001
+      - path: /calculator/
+        pathType: Prefix
+        backend:
+          service:
+            name: boathouse-calculator
+            port:
+              number: 3001
