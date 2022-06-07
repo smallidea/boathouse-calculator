@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Smoke 0607-Server 回归测试*/
+/** Smoke 0608-Local*/
 /**
  * Module dependencies. 
  */
