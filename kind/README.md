@@ -31,5 +31,8 @@ kubectl wait --namespace ingress-nginx \
   --timeout=90s
 
 ## Verify with usage example
-kubectl apply -f https://kind.sigs.k8s.io/examples/ingress/usage.yaml
+kubectl apply -f echo-ingress.yaml
+
+## Deploy calcualtor
+kubectl apply -f calculator-ingress.yaml
 ```
