@@ -34,5 +34,6 @@ kubectl wait --namespace ingress-nginx \
 kubectl apply -f echo-ingress.yaml
 
 ## Deploy calcualtor
-kubectl apply -f calculator-ingress.yaml
+kubectl apply -f ../kubeconfig/deployment.yaml
+kubectl apply -f ../kubeconfig/ingress.yaml
 ```

@@ -1,12 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: boathouse-calculator
+spec:
+  type: ClusterIP
+  ports:
+  - port: 3001
+  selector:
+    app: boathouse-calculator
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: boathouse-cal-ingress
+  name: boathouse-calculator-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "false"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/add-base-url: "true"
 spec:
+  ingressClassName: nginx
   rules:
   - http:
       paths:
-      - path: "/cal"
+      - path: /
         pathType: Prefix
         backend:
           service:

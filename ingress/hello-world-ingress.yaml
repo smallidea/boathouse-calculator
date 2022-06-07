@@ -3,9 +3,11 @@ kind: Ingress
 metadata:
   name: hello-world-ingress
   annotations:
+    kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
     nginx.ingress.kubernetes.io/use-regex: "true"
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/add-base-url: "true"
 spec:
   ingressClassName: nginx
   rules:
@@ -25,14 +27,7 @@ spec:
             name: aks-helloworld-two
             port:
               number: 80
-      - path: /(.*)
-        pathType: Prefix
-        backend:
-          service:
-            name: aks-helloworld-one
-            port:
-              number: 80
-      - path: /calculator(/|$)(.*)
+      - path: /
         pathType: Prefix
         backend:
           service:
