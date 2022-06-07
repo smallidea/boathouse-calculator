@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Smoke 0607-CLI Remote*/
+/** Smoke 0607-Server 回归测试*/
 /**
  * Module dependencies. 
  */
