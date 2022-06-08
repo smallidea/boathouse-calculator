@@ -10,13 +10,11 @@
 
 ## 使用 SmartIDE 开发和调试
 
-### 本地模式
+### CLI 本地模式
 
-1. 安装 SmartIDE CLI
+1. **安装** 参考 [安装手册](https://smartide.cn/zh/docs/install/cli/) 完成CLI的本地安装，SmartIDE CLI 支持 Windows/MacOS/Linux 三大主流操作系统。
 
-安装 SmartIDE CLI，参考链接: https://smartide.dev/zh/docs/getting-started/install/
-
-2. 在boathouse-calculator目录运行 `smartide start` 命令启动开发容器，自动打开 http://localhost:3030
+2. **一键启动** 使用以下指令即可启动WebIDE开始开发和调试
 
 ```shell
 ## 使用GitHub
@@ -25,11 +23,43 @@ smartide start https://github.com/idcf-boat-house/boathouse-calculator.git
 smartide start https://gitee.com/idcf-boat-house/boathouse-calculator.git
 ```
 
-![](images/smartideweb.png)
+启动后的效果如下
 
-### 主机模式
+![](images/smartide-local.png)
+
+### CLI 远程主机模式
+
+远程主机模式允许开发者使用一台Linux主机作为SmartIDE的开发资源，将开发环境一键漫游到这台主机上。开发环境主机可以是位于任何位置的物理机或者虚拟机，无需开放除了SSH端口以外的其他网络端口。
+
+主机环境要求：主机上需要需要预装 Docker 环境，请参考 [安装手册](https://smartide.cn/zh/docs/install/docker/linux/)。
+
+远程主机模式的启动指令与本地模式保持一致，只需要添加 --host <主机ID> 参数即可。
+
+运行以下指令添加主机到 SmartIDE CLI 并启动环境。
+
+```shell
+## 添加主机
+## 如果采用SSH-KEY认证方式，可以省略 <SSH密码> 参数
+smartide host add <主机IP或者域名> --username <SSH用户名> --password <SSH密码> --port <SSH端口>
+
+## 执行成功后，CLI会返回 主机ID，也可以使用以下指令查询主机列表
+smartide host list
+
+## 使用主机模式启动环境
+## 使用GitHub 
+smartide start --host <主机ID> https://github.com/idcf-boat-house/boathouse-calculator.git
+## 使用Gitee
+smartide start --host <主机ID> https://gitee.com/idcf-boat-house/boathouse-calculator.git
+```
 
 ### Server 模式
+
+SmartIDE Server 为开发团队提供对开发环境的统一在线管理和访问能力，企业管理者可以通过SmartIDE Server为开发团队提供统一的一致的开发环境，大幅降低开发者花费在搭建环境上的时间消耗，让开发者可以将更多的精力投入到业务需求开发和技术方案改进上。更为重要的是，SmartIDE Server提供了完全受控的开发测试环境，管理者可以通过工作区策略对开发环境进行管理
+
+- 在线版地址 https://dev.smartide.cn 
+- Server版快速启动手册 https://smartide.cn/zh/docs/quickstart/server/ 
+
+SmartIDE Server 已经开放内测，请进入 [官网](https://smartide.cn) 扫描页面底部二维码即可申请加入。
 
 
 
