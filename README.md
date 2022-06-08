@@ -56,6 +56,10 @@ smartide start --host <主机ID> https://gitee.com/idcf-boat-house/boathouse-cal
 
 SmartIDE Server 为开发团队提供对开发环境的统一在线管理和访问能力，企业管理者可以通过SmartIDE Server为开发团队提供统一的一致的开发环境，大幅降低开发者花费在搭建环境上的时间消耗，让开发者可以将更多的精力投入到业务需求开发和技术方案改进上。更为重要的是，SmartIDE Server提供了完全受控的开发测试环境，管理者可以通过工作区策略对开发环境进行管理
 
+启动后的效果如下
+
+![](images/smartide-server.png)
+
 - 在线版地址 https://dev.smartide.cn 
 - Server版快速启动手册 https://smartide.cn/zh/docs/quickstart/server/ 
 
