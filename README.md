@@ -65,7 +65,9 @@ SmartIDE Server 为开发团队提供对开发环境的统一在线管理和访�
 
 SmartIDE Server 已经开放内测，请进入 [官网](https://smartide.cn) 扫描页面底部二维码即可申请加入。
 
+Server一键启动按钮 
 
+[![smartide start](images/smartide-start-badge.png)](http://dev.smartide.cn/#/layout/smartide/workspace/details/157)
 
 ## 本地构建本项目的方式 
 
