@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Smoke 0610-Local & Remote*/
+/** Smoke 0613-Local*/
 /**
  * Module dependencies. 
  */
