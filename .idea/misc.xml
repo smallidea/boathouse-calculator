@@ -4,11 +4,7 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1391" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/api/controllers/arithmeticController.js" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
+          <option name="caretOffset" value="448" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/server.js" />
         </OpenedFileInfo>
       </list>
