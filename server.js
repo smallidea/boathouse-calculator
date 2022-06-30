@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Smoke 0630-Local*/
+/** c*/
 /**
  * Module dependencies. 
  */
