@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** SmartIDE Smoke0707 Local1 @Windows*/
+/** SmartIDE Smoke0707 Local @Windows*/
 /**
  * Module dependencies. 
  */
