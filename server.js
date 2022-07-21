@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** SmartIDE Smoke0720 Local&Remote&Server @MacOS */
+/** SmartIDE Smoke0721 Server @Windows */
 /**
  * Module dependencies. 
  */
