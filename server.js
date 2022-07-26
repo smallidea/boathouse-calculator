@@ -36,6 +36,7 @@ console.log("Server running on port " + port);
 console.log("smoke 2022.6.27 cli local/remote/k8s");
 console.log("k8s mode change user is smartide.");
 console.log("smoke 2022.7.19 k8s server");
+console.log("smoke 2022.7.26 k8s server release");
 /**
  * Normalize a port into a number, string, or false.
  */
