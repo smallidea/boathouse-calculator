@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** SmartIDE Smoke0802 Local Host&Remote Host&K8S Local&Host Server @MacOS */
+/** SmartIDE Smoke0802 Local Host&Remote Host&K8S Local&Host Server&K8S Server @MacOS */
 /**
  * Module dependencies. 
  */
