@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** SmartIDE Windows Smoke0803:Local Host/Remote/K8S;Server Host */
+/** SmartIDE Windows Smoke0803:Local Host/Remote/K8S;Server Host/K8S */
 /**
  * Module dependencies. 
  */
