@@ -12,11 +12,6 @@ metadata:
 spec:
   runtimeClassName: sysbox-runc
   containers:
-    - env:
-        - name: LOCAL_USER_PASSWORD
-          value: root123
-        - name: ROOT_PASSWORD
-          value: root123
       image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-java-v2-vscode-vmlc:latest
       imagePullPolicy: Always
       name: boathouse-calculator-dev
