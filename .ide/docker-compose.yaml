@@ -1,6 +1,6 @@
 version: "3"
 services:
-  boathouse-calculator:
+  boathouse-calculator-dev:
     environment:
       ROOT_PASSWORD: root123
       LOCAL_USER_PASSWORD: root123     
