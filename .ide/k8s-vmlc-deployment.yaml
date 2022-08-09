@@ -12,12 +12,12 @@ metadata:
 spec:
   runtimeClassName: sysbox-runc
   containers:
-      image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-java-v2-vscode-vmlc:latest
-      imagePullPolicy: Always
-      name: boathouse-calculator-dev
-      command: ["/sbin/init"]
-      ports:
-        - containerPort: 3001
+  - name: boathouse-calculator-dev
+    image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-java-v2-vscode-vmlc:latest
+    command: ["/sbin/init"]
+    imagePullPolicy: Always
+    ports:
+      - containerPort: 3001
 
 ---
 
