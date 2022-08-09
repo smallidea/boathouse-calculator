@@ -1,10 +1,11 @@
 version: "3"
 services:
-  boathouse-calculator:
+  boathouse-calculator-dev:
     environment:
       ROOT_PASSWORD: root123
       LOCAL_USER_PASSWORD: root123     
-    image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-opvscode:latest
+    image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-node-v2-vscode:all-version
+
     networks:
     - smartide-network
     ports:
