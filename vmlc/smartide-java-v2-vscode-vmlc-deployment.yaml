@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smartide-vmlc-container-deployment
+  annotations:
+    io.kubernetes.cri-o.userns-mode: "auto:size=65536"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smartide-vmlc-container
+  template:
+    metadata:
+      labels:
+        app: smartide-vmlc-container
+    spec:
+      runtimeClassName: sysbox-runc
+      containers:
+      - name: smartide-vmlc-container
+        image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-java-v2-vscode-vmlc:latest
+        command: ["/sbin/init"]
+        ports:
+        - name: nodejs-port
+          containerPort: 3000

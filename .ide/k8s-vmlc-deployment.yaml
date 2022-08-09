@@ -1,39 +1,28 @@
 
 ---
 
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
-  name: boathouse-calculator-deployment
+  name: boathouse-calculator-pod
+  annotations:
+    io.kubernetes.cri-o.userns-mode: "auto:size=65536"
+  labels:
+    boathouse-calculator.service: boathouse-calculator
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      boathouse-calculator.service: boathouse-calculator
-  strategy:
-    type: Recreate
-  template:
-    metadata:
-      labels:
-        boathouse-calculator.service: boathouse-calculator
-      annotations:
-        io.kubernetes.cri-o.userns-mode: "auto:size=65536"
-    spec:
-      runtimeClassName: sysbox-runc
-      containers:
-        - env:
-            - name: LOCAL_USER_PASSWORD
-              value: root123
-            - name: ROOT_PASSWORD
-              value: root123
-          image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-node-v2-vscode-vmlc:latest
-          imagePullPolicy: Always
-          name: boathouse-calculator-dev
-          command: ["/sbin/init"]
-          ports:
-            - containerPort: 3001
-          resources: {}
-status: {}
+  runtimeClassName: sysbox-runc
+  containers:
+    - env:
+        - name: LOCAL_USER_PASSWORD
+          value: root123
+        - name: ROOT_PASSWORD
+          value: root123
+      image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-java-v2-vscode-vmlc:latest
+      imagePullPolicy: Always
+      name: boathouse-calculator-dev
+      command: ["/sbin/init"]
+      ports:
+        - containerPort: 3001
 
 ---
 
