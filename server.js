@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /** SmartIDE MacOs Smoke0823:
- * Local  Host√/Remote/K8S;
+ * Local  Host√/Remote√/K8S;
  * Server Host/K8S */
  
 /**
