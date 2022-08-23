@@ -20,5 +20,4 @@ workspace:
       - npm config set registry https://registry.npmmirror.com
       - npm install
 
-  kube-deploy-files: "k8s-deployment.yaml" 
   docker-compose-file: "docker-compose.yaml"
