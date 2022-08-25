@@ -36,7 +36,7 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 console.log("Server running on port " + port);
-console.log("Smoke 2022.8.25");
+console.log("Smoke 2022.8.25 -- open in smartide from ads");
 
 /**
  * Normalize a port into a number, string, or false.
