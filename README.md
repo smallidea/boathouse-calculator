@@ -10,6 +10,12 @@
 
 ## 使用 SmartIDE 开发和调试
 
+### Open in SmartIDE 一键启动模式
+
+点击以下按钮即可一键启动当前代码库的开发调试环境。
+
+[![smartide start](.ide/smartide-start-badge.png)](https://dev.smartide.cn/#https://github.com/idcf-boat-house/boathouse-calculator.git)
+
 ### CLI 本地模式
 
 1. **安装** 参考 [安装手册](https://smartide.cn/zh/docs/install/cli/) 完成CLI的本地安装，SmartIDE CLI 支持 Windows/MacOS/Linux 三大主流操作系统。
