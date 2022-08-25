@@ -29,7 +29,13 @@ spec:
           # command: ["/bin/bash", "-ce", "tail -f /dev/null"]
           ports:
             - containerPort: 3001
-          resources: {}
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu: "500m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
 status: {}
 
 ---
