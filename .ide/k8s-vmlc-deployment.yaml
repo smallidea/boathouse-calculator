@@ -13,7 +13,7 @@ spec:
   runtimeClassName: sysbox-runc
   containers:
   - name: boathouse-calculator-dev
-    image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-java-v2-vscode-vmlc:latest
+    image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-base-v2-vscode-vmlc:all-version
     command: ["/sbin/init"]
     imagePullPolicy: Always
     ports:
