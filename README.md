@@ -17,7 +17,8 @@
 [![smartide start](.ide/smartide-start-badge.png)](https://dev.smartide.cn/#https://github.com/idcf-boat-house/boathouse-calculator.git)
 
 Open in SmartIDE @ GitEE
-[![smartide start](.ide/smartide-start-badge.png)](http://ws.gitee.work:8080/#git@gitee.com:idcf-boat-house/boathouse-calculator.git&branch=smartide)
+
+[![smartide start](.ide/smartide-start-badge.png)](http://ws.gitee.work:8080/#git@gitee.com:idcf-boat-house/boathouse-calculator.git)
 
 
 ### CLI 本地模式
