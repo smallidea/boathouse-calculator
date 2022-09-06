@@ -16,6 +16,10 @@
 
 [![smartide start](.ide/smartide-start-badge.png)](https://dev.smartide.cn/#https://github.com/idcf-boat-house/boathouse-calculator.git)
 
+Open in SmartIDE @ GitEE
+[![smartide start](.ide/smartide-start-badge.png)](http://ws.gitee.work:8080/#git@gitee.com:idcf-boat-house/boathouse-calculator.git&branch=smartide)
+
+
 ### CLI 本地模式
 
 1. **安装** 参考 [安装手册](https://smartide.cn/zh/docs/install/cli/) 完成CLI的本地安装，SmartIDE CLI 支持 Windows/MacOS/Linux 三大主流操作系统。
