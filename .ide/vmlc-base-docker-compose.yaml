@@ -1,7 +1,7 @@
 
 version: "3"
 services:
-  smartide-base-vmlc-dev:
+  boathouse-calculator-dev:
     image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-base-v2-vmlc
     runtime: sysbox-runc
     hostname: dev-container
