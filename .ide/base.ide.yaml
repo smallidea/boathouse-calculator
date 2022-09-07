@@ -5,20 +5,15 @@ orchestrator:
 workspace:
   dev-container:
     service-name: boathouse-calculator-dev
-    webide-port: 6800
-    
+
     ports: # 申明端口
-      tools-webide-vscode: 6800
-      tools-ssh: 6822
-      apps-application: 3001
+      tools-ssh: 6822    
     
-    ide-type: vscode  #vscode/theia
+    ide-type: sdk-only
     volumes: 
       git-config: true
       ssh-key: true
     command:
-      - npm config set registry https://registry.npmmirror.com
-      - npm install
 
   kube-deploy-files: "base-k8s-deployment.yaml" 
   docker-compose-file: "base-docker-compose.yaml"
