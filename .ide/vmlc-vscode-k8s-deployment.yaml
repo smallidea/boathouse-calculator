@@ -25,7 +25,8 @@ spec:
           imagePullPolicy: Always
           name: boathouse-calculator-dev
           ports:
-            - containerPort: 3001
+            - containerPort: 22
+            - containerPort: 3000
           resources:
             requests:
               memory: "1Gi"
@@ -42,10 +43,7 @@ kind: Service
 metadata:
   name: boathouse-calculator-service
 spec:
-  ports:
-    - name: "3001"
-      port: 3001
-      targetPort: 3001
+  ports:   
     - name: "6800"
       port: 6800
       targetPort: 3000
