@@ -1,0 +1,22 @@
+version: smartide/v0.3
+orchestrator:
+  type: allinone
+  version: 3
+workspace:
+  dev-container:
+    service-name: smartide-base-vmlc-dev
+    webide-port: 6800
+    
+    ports: # 申明端口
+      tools-ssh: 6822
+      tools-webide-vscode: 6800
+    
+    ide-type: vscode
+    volumes: 
+      git-config: true
+      ssh-key: true
+    command:
+      - dir
+
+  kube-deploy-files: "vmlc-base-k8s-deployment.yaml" 
+  docker-compose-file: "vmlc-base-docker-compose.yaml"
