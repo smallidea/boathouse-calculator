@@ -5,11 +5,10 @@ orchestrator:
 workspace:
   dev-container:
     service-name: boathouse-calculator-dev
-    webide-port: 6800
-    
+        
     ports: # 申明端口
-      tools-ssh: 6822
       tools-webide-vscode: 6800
+      tools-ssh: 6822      
     
     ide-type: vscode
     volumes: 
