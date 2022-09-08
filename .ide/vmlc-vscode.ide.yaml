@@ -17,5 +17,5 @@ workspace:
     command:
       - dir
 
-  kube-deploy-files: "vmlc-base-k8s-deployment.yaml" 
-  docker-compose-file: "vmlc-base-docker-compose.yaml"
+  kube-deploy-files: "vmlc-vscode-k8s-deployment.yaml" 
+  docker-compose-file: "vmlc-vscode-docker-compose.yaml"
