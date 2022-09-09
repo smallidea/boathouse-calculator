@@ -19,7 +19,7 @@ workspace:
       - npm install
   services:
     boathouse-calculator-vmlc:
-      image:  registry.cn-hangzhou.aliyuncs.com/smartide/smartide-base-v2-vscode-vmlc
+      image:  registry.cn-hangzhou.aliyuncs.com/smartide/smartide-base-v2-vscode-vmlc:all-version
       runtime: sysbox-runc
       hostname: dev-container
       restart: always
