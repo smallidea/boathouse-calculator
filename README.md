@@ -148,3 +148,11 @@ docker run -v "${PWD}/postman:/etc/newman" -t postman/newman:alpine run boathous
 docker run -v "${PWD}/postman:/etc/newman" -t postman/newman:alpine run boathouse-calculator.postman_collection.json -e local-dev.postman_environment.json --reporters junit --reporter-junit-export 'result-docker.xml'
 ```
 
+## Open In SmartIDE With xxx Image
+
+[smartide start with base image](https://dev.smartide.cn/#/layout/smartide/workspace?gitRepoUrl=git@github.com:idcf-boat-house/boathouse-calculator.git&branch=master&configFilePath=.ide/base.ide.yaml)
+
+[smartide start with base-vmlc image](https://dev.smartide.cn/#/layout/smartide/workspace?gitRepoUrl=git@github.com:idcf-boat-house/boathouse-calculator.git&branch=master&configFilePath=.ide/vmlc-base.ide.yaml)
+
+[smartide start with base-vmlc-vscode image](https://dev.smartide.cn/#/layout/smartide/workspace?gitRepoUrl=git@github.com:idcf-boat-house/boathouse-calculator.git&branch=master&configFilePath=.ide/vmlc-vscode.ide.yaml)
+
