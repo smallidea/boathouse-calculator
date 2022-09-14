@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** SmartIDE Windows Smoke0914:
+/** SmartIDE MacOS Smoke0914:
  * Local  Host√/Remote/K8S;
  * Server Host/K8S */
  
