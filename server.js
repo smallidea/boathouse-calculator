@@ -1,7 +1,11 @@
 #!/usr/bin/env node
-/** SmartIDE Windows Smoke0916:
- *  Local Host√/Remote√/K8S√;
- * Server Host√/K8S√ */
+/** SmartIDE MacOS Smoke0920:
+ *  Local Host√ Hybrid
+ *        Remote Hybrid
+ *        K8S Hybrid
+ * Server Host Hybrid
+ *        K8S  Hybrid
+ */
  
 /**
  * Module dependencies. 
