@@ -1,7 +1,7 @@
 version: "3"
 services:
   boathouse-calculator-dev:
-    image: rregistry.cn-hangzhou.aliyuncs.com/smartide/smartide-base-v2-vscode-vmlc:all-version
+    image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-base-v2-vscode-vmlc:all-version
     runtime: sysbox-runc
     hostname: dev-container
     restart: always
