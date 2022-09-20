@@ -40,7 +40,7 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 console.log("Server running on port " + port);
-console.log("Smoke 2022.9.20 local");
+console.log("Smoke 2022.9.20 local+remote");
 
 /**
  * Normalize a port into a number, string, or false.
