@@ -1,40 +1,24 @@
 version: smartide/v0.3
 orchestrator:
-  type: docker-compose
+  type: allinone
   version: 3
 workspace:
   dev-container:
-    service-name: boathouse-calculator-vmlc
-    ports:
-      tools-ssh: 6822
+    service-name: boathouse-calculator-dev
+    webide-port: 6800
+    
+    ports: # 申明端口
       tools-webide-vscode: 6800
-      app-ingress: 8080
-      app-nodejs: 3001
-    ide-type: vscode
+      tools-ssh: 6822
+      apps-application: 3001
+    
+    ide-type: vscode  #vscode/theia
     volumes: 
       git-config: true
       ssh-key: true
     command:
       - npm config set registry https://registry.npmmirror.com
       - npm install
-  services:
-    boathouse-calculator-vmlc:
-      image:  registry.cn-hangzhou.aliyuncs.com/smartide/smartide-base-v2-vscode-vmlc:all-version
-      runtime: sysbox-runc
-      hostname: dev-container
-      restart: always
-      volumes:
-        - .:/home/project
-      ports:
-        - 6822:22
-        - 6800:3000
-        - 8080:80
-        - 443:443
-        - 3001:3001
-      volumes:
-        - .:/home/project
-      networks:
-        - smartide-network  
-  networks:
-    smartide-network:
-      external: true
+
+  kube-deploy-files: "k8s-deployment-vmlc.yaml" 
+  docker-compose-file: "docker-compose-vmlc.yaml"
