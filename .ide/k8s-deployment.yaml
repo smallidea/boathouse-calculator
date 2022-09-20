@@ -31,13 +31,6 @@ spec:
             - containerPort: 3001
             - containerPort: 3000
             - containerPort: 22
-          resources:
-            requests:
-              memory: "1Gi"
-              cpu: "500m"
-            limits:
-              memory: "1Gi"
-              cpu: "500m"
 status: {}
 
 ---
