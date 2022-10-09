@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /** SmartIDE MacOS Smoke1010:
- *  Local Host√ Hybrid
+ *  Local Host√ Hybrid√
  *        Remote Hybrid
  *        K8S Hybrid
  * Server Host Hybrid
