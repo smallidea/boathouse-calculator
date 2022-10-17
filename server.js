@@ -1,7 +1,11 @@
 #!/usr/bin/env node
-/** SmartIDE Windows Smoke0909:
- * Local  Host√/Remote√/K8S√;
- * Server Host/K8S */
+/** SmartIDE MacOS Smoke1010:
+ *  Local Host√ Hybrid√
+ *        Remote√ Hybrid√
+ *        K8S√ Hybrid√
+ * Server Host√ Hybrid√
+ *        K8S√  Hybrid
+ */
  
 /**
  * Module dependencies. 
@@ -36,7 +40,7 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 console.log("Server running on port " + port);
-console.log("Smoke 2022.8.29");
+console.log("Smoke 2022.9.20 local+remote");
 
 /**
  * Normalize a port into a number, string, or false.
